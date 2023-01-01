@@ -18,9 +18,9 @@ print(' ')
 print('Task 2:')
 comparison_res = first < second
 print(comparison_res)
-comparison_res1 = first > second
-print(comparison_res1)
-comparison_res2 = first == second
-print(comparison_res2)
-comparison_res3 = first != second
-print(comparison_res3)
+comparison_res = first > second
+print(comparison_res)
+comparison_res = first == second
+print(comparison_res)
+comparison_res = first != second
+print(comparison_res)
