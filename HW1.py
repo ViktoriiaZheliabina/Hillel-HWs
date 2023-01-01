@@ -14,13 +14,13 @@ print(' ')
 
 # Задача 2.
 
-var = 10
+
 print('Task 2:')
-print(var < first)
-print(var > first)
-print(var == first)
-print(var != first)
-print(var < second)
-print(var > second)
-print(var == second)
-print(var != second)
+comparison_res = first < second
+print(comparison_res)
+comparison_res1 = first > second
+print(comparison_res1)
+comparison_res2 = first == second
+print(comparison_res2)
+comparison_res3 = first != second
+print(comparison_res3)
