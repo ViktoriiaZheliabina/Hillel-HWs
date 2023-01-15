@@ -5,6 +5,6 @@
 
 while True:
     slv = input()
-    if 'o' in slv or 'O' in slv:
+    if 'o' in slv.lower():
         break
     print('Write another word:')
