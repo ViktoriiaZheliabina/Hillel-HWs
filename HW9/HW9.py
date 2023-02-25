@@ -11,9 +11,16 @@
 # з описом метода і анотації.
 
 class Company:
+    """Клас що описує об'єкт Company"""
     branches = []
 
     def __init__(self, name: str, type: str, number_of_employees: int = None):
+        """
+
+        :param name: назва  об'єкт Company
+        :param type: тип діяльності, що веде  об'єкт Company
+        :param number_of_employees: кількість працівнків в  об'єкт Company
+        """
         self.name = name
         self.type = type
         self.number_of_employees = number_of_employees
@@ -41,7 +48,14 @@ class Company:
 
 
 class Employee:
+    """Клас що описує об'єкт Employee"""
     def __init__(self, name: str, surname: str, age: int):
+        """
+
+        :param name: ім'я об'єкт Employee
+        :param surname: прізвище об'єкт Employee
+        :param age: вік об'єкт Employee
+        """
         self.name = name
         self.surname = surname
         self.age = age
