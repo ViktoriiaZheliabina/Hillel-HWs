@@ -48,7 +48,7 @@ def check_exit():
             return True
         elif ans.lower() == 'yes':
             return False
-        print ('Incorrect value')
+        print('Incorrect value')
 
 
 def get_year_ending(age):
@@ -69,22 +69,26 @@ def get_year_ending(age):
         return 'років'
 
 
-while True:
-    age = func_inp()
-    if age.isdigit():
-        iage = int(age)
-        if iage > 9 and age[0] == age[1]:
-            print(f'О, вам {age} {get_year_ending(age)}! Який цікавий вік!')
-        elif iage < 7:
-            print(f'Тобі ж {age} {get_year_ending(age)}! Де твої батьки?')
-        elif iage < 16:
-            print(f'Тобі лише {age} {get_year_ending(age)}, а це е фільм для дорослих!')
-        elif iage > 65:
-            print(f'Вам {age} {get_year_ending(age)}? Покажіть пенсійне посвідчення!')
+def kassir_main():
+    while True:
+        age = func_inp()
+        if age.isdigit():
+            iage = int(age)
+            if iage > 9 and age[0] == age[1]:
+                print(f'О, вам {age} {get_year_ending(age)}! Який цікавий вік!')
+            elif iage < 7:
+                print(f'Тобі ж {age} {get_year_ending(age)}! Де твої батьки?')
+            elif iage < 16:
+                print(f'Тобі лише {age} {get_year_ending(age)}, а це е фільм для дорослих!')
+            elif iage > 65:
+                print(f'Вам {age} {get_year_ending(age)}? Покажіть пенсійне посвідчення!')
+            else:
+                print(f'Незважаючи на те, що вам {age} {get_year_ending(age)}, білетів всеодно нема!')
         else:
-            print(f'Незважаючи на те, що вам {age} {get_year_ending(age)}, білетів всеодно нема!')
-    else:
-        print('Incorrect value')
+            print('Incorrect value')
 
-    if check_exit():
-        break
+        if check_exit():
+            break
+
+
+kassir_main()
