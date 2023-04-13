@@ -1,8 +1,7 @@
 import pytest
 from selenium.webdriver import Chrome
-
 from HW16.pages.categories import Categories
-from time import sleep
+
 
 
 @pytest.fixture(scope='session')
@@ -10,8 +9,7 @@ def driver():
     driver = Chrome("drivers/cromedriver")
     driver.maximize_window()
 
-    driver.get("https://rozetka.com.ua/ua/")
-    sleep(1)
+    driver.get("https://stylus.ua/")
     yield driver
     driver.quit()
 
