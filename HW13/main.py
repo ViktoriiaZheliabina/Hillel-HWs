@@ -11,7 +11,7 @@ from apple import Apple
 
 
 class Shop:
-    """Class describes behavior of object Shop"""
+    """Class describes behavior of the object Shop"""
 
     items = []
 
