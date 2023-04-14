@@ -10,12 +10,13 @@ class Notebook(ABC):
     def __init__(self, model_name: str, cpu: str, ram: int, hdd: int, display: float, price: float):
         """
 
-        :param model_name: Notebook name
-        :param cpu: CPU name
-        :param ram: memory
-        :param hdd: HDD size
-        :param display: diagonal length
-        :param price: price
+        Args:
+            model_name:
+            cpu:
+            ram:
+            hdd:
+            display:
+            price:
         """
         self.model_name = model_name
         self.cpu = cpu
