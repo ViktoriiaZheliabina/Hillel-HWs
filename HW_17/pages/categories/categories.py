@@ -11,7 +11,7 @@ class Categories(BasePage):
         super().__init__(driver)
         self.__locator_collection = CategoriesLocatorCollection()
 
-    def choose_category(self, name: str):
+    def choose_category(self, name: str) -> None:
         """Chooses the category by name
 
         Args:
@@ -23,7 +23,7 @@ class Categories(BasePage):
         self.click(self.__locator_collection.cookies_button)
         self.click(self.__locator_collection.get_category(name))
 
-    def choose_sub_category(self, name: str):
+    def choose_sub_category(self, name: str) -> ProductList:
         """Chooses the sub-category by name
 
         Args:
