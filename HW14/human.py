@@ -1,5 +1,12 @@
 class Human:
     def __init__(self, name: str, age: int, gender: str):
+        """
+
+        Args:
+            name: human's name
+            age: human's age
+            gender: human's gender
+        """
         self.__name = name
         self.__age = age
         self.__gender = gender
